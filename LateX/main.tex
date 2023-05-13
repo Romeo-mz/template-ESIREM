@@ -1,0 +1,94 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\graphicspath{ {./img/} }
+
+\def\logouniversite{img/UBFC.png}
+
+\addto\captionsspanish{\renewcommand{\contentsname}{Table des matières}}
+
+\newcommand{\titre}{\color{blue}TITRE}
+
+\newcommand{\auteur}{NOM Prénom}
+\newcommand{\datePublication}{\today}
+
+\begin{document}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{titlepage}
+\reversemarginpar\marginpar{
+\vspace{-86pt}
+\hspace*{25pt}
+\includegraphics[height=3cm]{\logouniversite}
+}
+
+
+{\centering
+    \vspace{3cm}
+    \hspace{1cm} \includegraphics[width=.5\textwidth]{img/logo.png}
+    \par\vspace{5cm}
+    {\scshape\huge\textbf{\hspace{2cm}\titre}} \par\vspace{6cm}
+    
+
+    \begin{flushright}
+            \item \auteur 
+            \item \textit{\datePublication}
+    \end{flushright}
+
+}
+
+\end{titlepage}
+
+\begingroup
+\tableofcontents
+\listoffigures
+\endgroup
+
+%Image:
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.7\textwidth]{img/.png}
+%\caption{TITRE Figure}
+%\label{fig:1}
+%\end{figure}
+
+%Image groupée:
+%\begin{figure}[H]
+%\centering
+%\begin{subfigure}[b]{0.45\textwidth}
+%    \includegraphics[width=\textwidth]{img/.png}
+%\end{subfigure}
+%\begin{subfigure}[b]{0.45\textwidth}
+%    \includegraphics[width=\textwidth]{img/.png}
+%\end{subfigure}
+%\caption{TITRE Figure}
+%\end{figure}
+
+\section{Introduction}
+
+\section{Section 1}
+
+\subsection{SubSection 1}
+\subsection{SubSection 2}
+\subsection{SubSection 3}
+
+\section{Section 2}
+
+\section{Conclusion}
+
+
+\end{document}
