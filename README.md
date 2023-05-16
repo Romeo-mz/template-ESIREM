@@ -44,3 +44,6 @@ git push origin new-branch-name
 ```
 Créer une pull request: Accédez à la page de votre fork sur GitHub, sélectionnez la nouvelle branche dans le menu déroulant des branches, puis cliquez sur le bouton "New pull request". Remplissez les informations nécessaires et soumettez la pull request.
 
+##Supporter le répo
+
+Si vous voulez me faire savoir que vous le trouvez utile, pensez à lui donner une étoile ⭐ sur GitHub.
