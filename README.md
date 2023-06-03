@@ -14,7 +14,7 @@ Pour utiliser l'un des templates, il suffit de cloner le dépôt Git et de copie
 
 Exemple pour utiliser le template LaTeX :
 
-1. Cloner le dépôt Git : git clone https://github.com/mon-nom/utilitaires-esirem.git
+1. Cloner le dépôt Git : git clone https://github.com/Romeo-mz/template-ESIREM.git
 2. Copier le dossier `template-latex` dans votre projet.
 3. Modifier le contenu du template selon vos besoins.
 
