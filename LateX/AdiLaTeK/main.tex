@@ -1,0 +1,102 @@
+% ---------- Initialisation du document ---------- %
+\documentclass[a4paper, 12pt]{report}
+% - Indique que le document est en français - %
+\usepackage[francais]{babel}
+% - Réglage des marges - %
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=1.5cm}
+% - Utilisation des polices latines - %
+\usepackage{lmodern}
+% - Permet la bonne rentrée des accents et caractères spéciaux - %
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% - Utilisation de couleurs - %
+\usepackage{xcolor}
+% - Somaire cliquable - %
+\usepackage{hyperref}
+% - Outils pour mise en place de bibliographie - %
+\usepackage{biblatex}
+\addbibresource{sample.bib}
+% - Insertion des images et des légendes - %
+\usepackage{graphicx} 
+\usepackage{subcaption}
+\usepackage{subcaption}
+% - Code source jolis - %
+\usepackage{minted}
+% - Facilité d'écriture des équations mathématiques - %
+\usepackage{amsmath,amsfonts,amssymb}
+% - Améliore les interfaces des objets flottants - %
+\usepackage{float}
+
+% --------- Début du Rapport --------- %
+\begin{document}
+% - Numérotation des pages - %
+\pagenumbering{arabic}
+
+\include{préface}
+
+% ---------- Compte Rendu  ---------- %
+\chapter{Compte Rendu}
+\section{Objectif du TP}
+
+\section{Partie A}
+\subsection{}
+\subsection{Conclusion}
+
+\section{Partie B}
+\subsection{}
+\subsection{Conclusion}
+
+\section{Partie C}
+\subsection{}
+\subsection{Conclusion}
+
+\section{Conclusion finale}
+
+\section{Remerciements}
+
+
+\chapter{Annexe}
+\section{Code-source / Document...}
+\section{Bibliographie}
+
+\end{document}
+
+% --------- Aide Syntaxe  ---------- %
+
+% - Image - %
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img/.png}
+\caption{TITRE Figure}
+\label{fig:1}
+\end{figure}
+
+% - Image groupée - %
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/.png}
+\end{subfigure}
+\caption{TITRE Figure}
+\end{figure}
+
+% - Code source avec minted - %
+\begin{minted}[frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    bgcolor = lightgray,
+    fontsize=\footnotesize,
+    linenos
+    ]{java}
+    public class HelloWorld 
+    { 
+        public static void main(String args[]) 
+        { 
+            System.out.println("Hello, World"); 
+        } 
+    }
+\end{minted}
