@@ -1,4 +1,4 @@
-# Templates ESIREM
+# Templates E̶S̶I̶R̶E̶M̶ POLYTECH Dijon
 
 Ce dépôt Git contient différents templates pour les projets de l'ESIREM.
 
