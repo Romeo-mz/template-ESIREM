@@ -24,7 +24,7 @@ Si vous souhaitez contribuer à ce repo Git en ajoutant un nouveau template, n'h
 1. Forker le dépôt: Accédez au dépôt GitHub du projet et cliquez sur le bouton "Fork" en haut à droite de la page. Cela créera une copie du dépôt sous votre compte GitHub.
 
 2. Cloner le fork: Clonez le fork sur votre machine locale en utilisant la commande suivante (remplacez your-username et repo-name par les valeurs appropriées) :
-git clone https://github.com/your-username/repo-name.git
+git clone [https://github.com/Romeo-Mz/template-ESIREM.git](https://github.com/Romeo-mz/template-ESIREM.git)
 
 3. Créer une nouvelle branche: Créez une nouvelle branche pour y apporter vos modifications. Utilisez la commande suivante pour créer et basculer sur la nouvelle branche (remplacez new-branch-name par un nom de branche approprié) :
 
