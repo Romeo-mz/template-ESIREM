@@ -20,7 +20,7 @@
 \usepackage{hyperref}
 % - Outils pour mise en place de bibliographie - %
 \usepackage{biblatex}
-\addbibresource{sample.bib}
+\addbibresource{biblio.bib}
 % - Insertion des images et des légendes - %
 \usepackage{graphicx} 
 \usepackage{subcaption}
@@ -30,7 +30,7 @@
 \usepackage{amsmath,amsfonts,amssymb}
 % - Améliore les interfaces des objets flottants - %
 \usepackage{float}
-
+\usepackage{csquotes}
 \usepackage{textcomp}
 
 % --------- Début du Rapport --------- %
@@ -49,12 +49,16 @@
 %\input{intro}
 
 \chapter{Conclusion Générale}
-%\input{conclusion}
+%input{conclusion}
+
+%\printbibliography[heading=bibintoc]
 
 
 \end{document}
 
 % --------- Aide Syntaxe  ---------- %
+
+% Site pour implémenter facilement des formules mathématiques: https://editor.codecogs.com
 
 % - Types de Titres - %
 \section{Titre}
@@ -106,7 +110,6 @@
     \label{eq:1}
     a^2 + b^2 = c^2
 \end{equation}
-\ref{eq:1}
 
 
 % - Code source avec minted - %
