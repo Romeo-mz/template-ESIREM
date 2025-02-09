@@ -1,0 +1,131 @@
+% - INFO GENERALES - %
+% Pour que la compilation fonctionne sur Overleaf, il faut que le compilateur soit XeLaTeX (changeable dans le menu en haut à gauche) %
+% ---------- Initialisation du document ---------- %
+\documentclass[a4paper, 12pt]{report}
+% - Indique que le document est en français - %
+\usepackage[french]{babel}
+% - Réglage des marges - %
+\usepackage{geometry}
+\geometry{hmargin=2.5cm,vmargin=1.5cm}
+% - Utilisation des polices latines - %
+\usepackage{lmodern}
+\usepackage{fontspec}
+\setmainfont{Arial}
+% - Permet la bonne rentrée des accents et caractères spéciaux - %
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% - Utilisation de couleurs - %
+\usepackage{xcolor}
+% - Somaire cliquable - %
+\usepackage{hyperref}
+% - Outils pour mise en place de bibliographie - %
+\usepackage{biblatex}
+\addbibresource{biblio.bib}
+% - Insertion des images et des légendes - %
+\usepackage{graphicx} 
+\usepackage{subcaption}
+% - Code source jolis - %
+\usepackage{minted}
+% - Facilité d'écriture des équations mathématiques - %
+\usepackage{amsmath,amsfonts,amssymb}
+% - Améliore les interfaces des objets flottants - %
+\usepackage{float}
+\usepackage{csquotes}
+\usepackage{textcomp}
+
+% --------- Début du Rapport --------- %
+\begin{document}
+% Suppréssion border rouge tables
+\hypersetup{pdfborder=0 0 0}
+% - Numérotation des pages - %
+\pagenumbering{arabic}
+\setmainfont{Arial}
+
+\include{preface}
+
+
+% ---------- Compte Rendu  ---------- %
+\chapter{Introduction}
+%\input{intro}
+
+\chapter{Conclusion Générale}
+%\input{conclusion}
+
+%\printbibliography[heading=bibintoc]
+
+\end{document}
+
+% --------- Aide Syntaxe  ---------- %
+
+% Site pour implémenter facilement des formules mathématiques: https://editor.codecogs.com
+
+% - Types de Titres - %
+\section{Titre}
+\subsection{Titre}
+\subsubsection{Titre}
+
+% - Image - %
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{img/.png}
+\caption{TITRE Figure}
+\label{fig:1}
+\end{figure}
+
+% - Image groupée - %
+\begin{figure}[H]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/.png}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/.png}
+\end{subfigure}
+\caption{TITRE Figure}
+\label{fig:1}
+\end{figure}
+
+% - Tableau - %
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    Ligne 1 & a & b & c & d & e & f \\
+    \hline
+    Autre ligne 1 & & & & & & \\
+    \hline
+    Autre ligne 2 & & & & & & \\
+    \hline
+    \end{tabular}
+    \caption{TITRE Tableau}
+    \label{fig:1} 
+\end{figure}
+
+% - Faire référence à une figure - %
+\ref{fig:1}
+
+% - Formule Mathématique - %
+\begin{equation}
+    \label{eq:1}
+    a^2 + b^2 = c^2
+\end{equation}
+
+
+% - Code source avec minted - %
+% Baground color : deactive by default / breaklines : active by default for long lines
+\begin{minted}[frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    %bgcolor = lightgray,
+    fontsize=\footnotesize,
+    linenos,
+    breaklines
+    ]{java}
+    public class HelloWorld 
+    { 
+        public static void main(String args[]) 
+        { 
+            System.out.println("Hello, World"); 
+        } 
+    }
+\end{minted}
